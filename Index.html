@@ -29,33 +29,32 @@
 
   <!-- Start of the Nav Bar -->
 
-  <header class="text-gray-400 bg-gray-900 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-        <div><img style="height: 30px;" src="./Photos/PC_Logo_ZOOMED.png"></div>
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-        <span style="font-family: 'JetBrains Mono', monospace; font-size:x-large;" class="ml-3 text-indigo-200">Paragon
-          Creative, LLC.</span>
-      </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a href="index.html" class="mr-5 hover:text-white">Home</a>
-        <a href="Services.html" class="mr-5 hover:text-white">Services</a>
-        <a href="Customers.html" class="mr-5 hover:text-white">Customers</a>
-        <a href="Quality.html" class="mr-5 hover:text-white">Quality</a>
-      </nav>
-      <button
-        class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-        <div data-netlify-identity-button=""></div>
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </button>
-    </div>
+  <header class=" lg:px-16 px-6 bg-gray-800 flex flex-wrap items-center lg:py-0 py-2">
+    <div class="flex-1 flex justify-between items-center">
+      <a href="#">
+      <img class="max-h-7" src="./Photos/PC_Logo_ZOOMED.png">
+    </a>
+  </div>
+
+   <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+  <input class="hidden" type="checkbox" id="menu-toggle" />
+
+  <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+    <nav>
+      <ul class="lg:flex items-center justify-between text-base text-white pt-4 lg:pt-0">
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="index.html">Home</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="Services.html">Services</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400" href="Customers.html">Customers</a></li>
+        <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400 lg:mb-0 mb-2" href="Quality.html">Quality</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="lg:ml-4 flex items-center justify-start lg:mb-0 mb-4 pointer-cursor">
+      <img class="rounded-full w-10 h-10 border-2 border-transparent hover:border-indigo-400" src="https://pbs.twimg.com/profile_images/1128143121475342337/e8tkhRaz_normal.jpg" alt="Andy Leverenz">
+    </a>
+
+  </div>
+
   </header>
-
-
 
 
   <!-- Start of the CTA -->
@@ -63,7 +62,7 @@
   <div class="rounded-b-3xl relative bg-cover bg-no-repeat bg-bottom"
     style="min-height: 700px; background-image: url('./Photos/Programming.gif')" title="Coding">
     <div
-      class="rounded-b-3xl flex flex-col justify-center items-center absolute inset-0 bg-gray-800 opacity-75 text-center text-white p-10">
+      class="rounded-b-3xl flex flex-col justify-center items-center absolute inset-0 bg-indigo-900 opacity-80 text-center text-white p-10">
       <h1 style="font-family: 'JetBrains Mono', monospace" class="text-4xl md:text-5xl">The Complete Website Solution,
       </h1>
       <h2 style="font-family: 'Bebas Neue', monospace" class="text-8xl md:text-9xl py-4">at Your Service.</h2>
@@ -122,7 +121,7 @@
   <div class="w-full bg-indigo-200 mx-auto px-4 sm:px-6 lg:px-8 pb-12">
     <div class="max-w-3xl mx-auto">
       <div class="bg-white shadow sm:rounded-lg">
-        <div class="px-4 py-5 sm:p-6">
+        <div class="px-4 py-5 sm:px-6 lg:px-8">
           <h2 style="font-weight:600; font-family: 'JetBrains Mono', monospace"
             class="text-2xl leading-6 font-medium text-gray-900">
             Who do we do it for?
