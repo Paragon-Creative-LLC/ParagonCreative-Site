@@ -33,6 +33,24 @@
   <!-- Start of the body content -->
 
   <body style="background-color: var(--dark)">
+    <!-- Start of the Nav Bar for small screens -->
+
+    <div style="background-color: var(--light); color: var(--darker)">
+      <header class="lg:hidden md:contents body-font">
+        <div
+          class="container mx-auto flex flex-wrap p-10 flex-col md:flex-row items-center"
+        >
+          <nav
+            class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-4xl"
+          >
+            <a class="mr-10 hover:text-white">Services</a>
+            <a class="mr-10 hover:text-white">About</a>
+            <a class="mr-10 hover:text-white">Contact</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+
     <!-- Start of the Nav Bar for large screens -->
 
     <header
@@ -133,7 +151,7 @@
     <!-- Start of the CTA -->
 
     <div
-      class="md:h-1/2 lg:h-2/3  xsm:text-5xl sm:text-5xl md:text-5xl lg:text-5xl pb-8 lg:rounded-b-3xl relative bg-cover bg-no-repeat bg-bottom"
+      class="md:h-1/2 lg:h-2/3 xsm:text-5xl sm:text-5xl md:text-5xl lg:text-5xl pb-8 lg:rounded-b-3xl relative bg-cover bg-no-repeat bg-bottom"
       style="background-image: url('./Photos/Programming.gif')"
       title="Coding"
     >
@@ -141,8 +159,8 @@
         class="xsm:text-5xl sm:text-5xl md:text-5xl lg:text-5xl lg:rounded-b-3xl flex flex-col justify-center items-center absolute inset-0 opacity-80 text-center text-white p-10"
         style="background-color: var(--lighter)"
       >
-      <img class="lg:hidden w-1/2 pb-20" src="./Photos/PC_Logo_ZOOMED.png">  
-      <h1
+        <img class="lg:hidden w-1/2 pb-20" src="./Photos/PC_Logo_ZOOMED.png" />
+        <h1
           style="font-family: 'JetBrains Mono', monospace"
           class="xsm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
         >
@@ -178,24 +196,6 @@
           </svg>
         </button>
       </div>
-    </div>
-
-    <!-- Start of the Nav Bar for small screens -->
-
-    <div style="background-color: var(--light); color: var(--darker)">
-      <header class="lg:hidden md:contents body-font">
-        <div
-          class="container mx-auto flex flex-wrap p-10 flex-col md:flex-row items-center"
-        >
-          <nav
-            class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-4xl"
-          >
-            <a class="mr-10 hover:text-white">Services</a>
-            <a class="mr-10 hover:text-white">About</a>
-            <a class="mr-10 hover:text-white">Contact</a>
-          </nav>
-        </div>
-      </header>
     </div>
 
     <!-- Anatomy of Paragon -->
