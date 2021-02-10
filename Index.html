@@ -33,10 +33,10 @@
   <!-- Start of the body content -->
 
   <body style="background-color: var(--dark)">
-    <!-- Start of the Nav Bar -->
+    <!-- Start of the Nav Bar for large screens -->
 
     <header
-      class="sm:h-20 md:h-20 lg:px-16 px-6 flex flex-wrap items-center lg:py-0 py-2"
+      class="md:hidden lg:flex sm:h-20 md:h-20 lg:px-16 px-6 flex-wrap items-center lg:py-0 py-2"
       style="background-color: var(--dark)"
     >
       <div
@@ -53,7 +53,7 @@
             class="md:hidden lg:contents lg:text-white text-xl font-semibold"
             style="
               font-family: 'JetBrains Mono', monospace;
-              color: var(--light);
+              color: var(--lightest);
             "
           >
             Paragon Creative, LLC.
@@ -92,7 +92,10 @@
                       href="mailto:Support@ParagonCreative.LLC"
                       type="button"
                       class="bg-opacity-50 relative inline-flex items-center px-4 py-2 rounded-l-md border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 focus:ring-yellow-500 focus:border-yellow-500"
-                      style="border-color: var(--light); color: var(--light)"
+                      style="
+                        border-color: var(--lighter);
+                        color: var(--lightest);
+                      "
                     >
                       Support
                     </button>
@@ -100,7 +103,10 @@
                       href="mailto:Support@ParagonCreative.LLC"
                       type="button"
                       class="bg-opacity-50 -ml-px relative inline-flex items-center px-4 py-2 border text-sm font-medium text-white focus:z-10 focus:outline-none focus:ring-1 focus:ring-yellow-500 focus:border-yellow-500"
-                      style="border-color: var(--light); color: var(--light)"
+                      style="
+                        border-color: var(--lighter);
+                        color: var(--lightest);
+                      "
                     >
                       Contact
                     </button>
@@ -108,7 +114,10 @@
                       href="mailto:Support@ParagonCreative.LLC"
                       type="button"
                       class="bg-opacity-50 -ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border text-sm font-medium text-white focus:z-10 focus:outline-none focus:ring-1 focus:ring-yellow-500 focus:border-yellow-500"
-                      style="border-color: var(--light); color: var(--light)"
+                      style="
+                        border-color: var(--lighter);
+                        color: var(--lightest);
+                      "
                     >
                       Get Free Quote
                     </button>
@@ -124,15 +133,16 @@
     <!-- Start of the CTA -->
 
     <div
-      class="h-2/3 xsm:text-5xl sm:text-5xl md:text-5xl lg:text-5xl pb-8 rounded-b-3xl relative bg-cover bg-no-repeat bg-bottom"
+      class="h-2/3 xsm:text-5xl sm:text-5xl md:text-5xl lg:text-5xl pb-8 lg:rounded-b-3xl relative bg-cover bg-no-repeat bg-bottom"
       style="background-image: url('./Photos/Programming.gif')"
       title="Coding"
     >
       <div
-        class="xsm:text-5xl sm:text-5xl md:text-5xl lg:text-5xl rounded-b-3xl flex flex-col justify-center items-center absolute inset-0 opacity-80 text-center text-white p-10"
-        style="background-color: var(--light)"
+        class="xsm:text-5xl sm:text-5xl md:text-5xl lg:text-5xl lg:rounded-b-3xl flex flex-col justify-center items-center absolute inset-0 opacity-80 text-center text-white p-10"
+        style="background-color: var(--lighter)"
       >
-        <h1
+      <img class="lg:hidden w-1/2 pb-20" src="./Photos/PC_Logo_ZOOMED.png">  
+      <h1
           style="font-family: 'JetBrains Mono', monospace"
           class="xsm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
         >
@@ -170,6 +180,24 @@
       </div>
     </div>
 
+    <!-- Start of the Nav Bar for small screens -->
+
+    <div style="background-color: var(--light); color: var(--darker)">
+      <header class="lg:hidden md:contents body-font">
+        <div
+          class="container mx-auto flex flex-wrap p-10 flex-col md:flex-row items-center"
+        >
+          <nav
+            class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-4xl"
+          >
+            <a class="mr-10 hover:text-white">Services</a>
+            <a class="mr-10 hover:text-white">About</a>
+            <a class="mr-10 hover:text-white">Contact</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+
     <!-- Anatomy of Paragon -->
 
     <div
@@ -182,12 +210,15 @@
       <div class="relative max-w-7xl mx-auto">
         <div class="text-center">
           <h2
-            class="text-3xl tracking-tight font-extrabold sm:text-4xl"
-            style="color: var(--light)"
+            class="text-3xl tracking-tight font-extrabold sm:text-5xl"
+            style="color: var(--lighter)"
           >
             The Anatomy of Paragon
           </h2>
-          <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+          <p
+            class="mt-3 max-w-4xl mx-auto text-xl text-gray-500 sm:max-w-xl sm:text-2xl sm:mt-4"
+            style="color: var(--lightest)"
+          >
             Here at Paragon, we forge websites with three big goals for every
             customer we work with.
 
@@ -234,7 +265,7 @@
             <div class="flex-shrink-0">
               <img
                 class="h-48 w-full object-cover"
-                src="./Photos/Google.gif"
+                src="./Photos/seo.jpg"
                 alt=""
               />
             </div>
@@ -297,7 +328,7 @@
     <!-- Paragon Pricing -->
 
     <div
-      class="relative px-4 pb-20 sm:px-6 lg:px-8"
+      class="relative px-4 pb-20 sm:px-6 lg:pt-24 lg:px-8"
       style="background-color: var(--dark)"
     >
       <div class="absolute inset-0">
@@ -306,12 +337,15 @@
       <div class="relative max-w-7xl mx-auto">
         <div class="text-center">
           <h2
-            class="text-3xl tracking-tight font-extrabold sm:text-4xl"
-            style="color: var(--light)"
+            class="text-3xl tracking-tight font-extrabold sm:text-5xl"
+            style="color: var(--lighter)"
           >
             Paragon Pricing
           </h2>
-          <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+          <p
+            class="mt-3 max-w-4xl mx-auto text-xl text-gray-500 sm:max-w-2xl sm:text-2xl sm:mt-4"
+            style="color: var(--lightest)"
+          >
             What sets us apart from other designers, is our pricing.
 
             <!-- This is the start of the First Goal section. -->
@@ -421,19 +455,20 @@
     <div class="text-center" style="background-color: var(--dark)">
       <h2
         class="text-3xl tracking-tight font-extrabold sm:text-4xl"
-        style="color: var(--light)"
+        style="color: var(--lighter)"
       >
         Customer Examples
       </h2>
       <p
-        class="text-justify mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4"
+        class="text-justify mt-3 max-w-2xl mx-auto text-xl sm:mt-4"
+        style="color: var(--lightest)"
       >
         With explicit permission from the owners, below are two examples of the
         kind of craftsmanship you will recieve with a Paragon website.
       </p>
     </div>
 
-    <section class="text-gray-400 body-font">
+    <section class="body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -mx-4 -mb-10 text-center">
           <div class="sm:w-1/2 mb-10 px-4">
@@ -446,13 +481,13 @@
             </div>
             <h2
               class="title-font text-2xl font-medium mt-6 mb-3"
-              style="color: var(--light)"
+              style="color: var(--lighter)"
             >
               Jeepr' Offroad Accessories
             </h2>
             <p
               class="text-justify leading-relaxed text-base"
-              style="color: var(--light)"
+              style="color: var(--lighter)"
             >
               The owner of Jeepr' came to us with one thing in mind. He wanted a
               website that demonstrated the values of his company, tough parts,
@@ -471,13 +506,13 @@
             </div>
             <h2
               class="title-font text-2xl font-medium mt-6 mb-3"
-              style="color: var(--light)"
+              style="color: var(--lighter)"
             >
               Haley Jones Photography
             </h2>
             <p
               class="text-justify leading-relaxed text-base"
-              style="color: var(--light)"
+              style="color: var(--lighter)"
             >
               Haley was looking for something more creative, where customers can
               see that she is uniquely skilled at what she does before she even
@@ -493,12 +528,16 @@
     <!-- Footer Starts -->
 
     <div class="pt-8">
-      <footer class="rounded-t-3xl" style="background-color: var(--light)">
+      <footer class="rounded-t-3xl" style="background-color: var(--lighter)">
         <div
           class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
         >
           <div class="flex justify-center space-x-6 md:order-2">
-            <a href="#" class="text-gray-400 hover:text-gray-500">
+            <a
+              href="#"
+              class="hover:text-gray-500"
+              style="color: var(--darker)"
+            >
               <span class="sr-only">Facebook</span>
               <svg
                 class="h-6 w-6"
@@ -514,7 +553,11 @@
               </svg>
             </a>
 
-            <a href="#" class="text-gray-400 hover:text-gray-500">
+            <a
+              href="#"
+              class="hover:text-gray-500"
+              style="color: var(--darker)"
+            >
               <span class="sr-only">Instagram</span>
               <svg
                 class="h-6 w-6"
@@ -530,7 +573,11 @@
               </svg>
             </a>
 
-            <a href="#" class="text-gray-400 hover:text-gray-500">
+            <a
+              href="#"
+              class="hover:text-gray-500"
+              style="color: var(--darker)"
+            >
               <span class="sr-only">Twitter</span>
               <svg
                 class="h-6 w-6"
@@ -544,7 +591,11 @@
               </svg>
             </a>
 
-            <a href="#" class="text-gray-400 hover:text-gray-500">
+            <a
+              href="#"
+              class="hover:text-gray-500"
+              style="color: var(--darker)"
+            >
               <span class="sr-only">GitHub</span>
               <svg
                 class="h-6 w-6"
@@ -560,7 +611,11 @@
               </svg>
             </a>
 
-            <a href="#" class="text-gray-400 hover:text-gray-500">
+            <a
+              href="#"
+              class="hover:text-gray-500"
+              style="color: var(--darker)"
+            >
               <span class="sr-only">Dribbble</span>
               <svg
                 class="h-6 w-6"
@@ -577,7 +632,7 @@
             </a>
           </div>
           <div class="mt-8 md:mt-0 md:order-1">
-            <p class="text-center text-base text-gray-400">
+            <p class="text-center text-base" style="color: var(--darker)">
               © 2021 Paragon Creative, LLC. All rights reserved.
             </p>
           </div>
