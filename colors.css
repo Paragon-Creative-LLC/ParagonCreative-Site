@@ -1,7 +1,41 @@
-:root {
-  --light: #017add;
-  --lighter: #e26a4c;
-  --lightest: #ffffff;
-  --dark: #00307e;
-  --darker: #00215e;
+@media only screen {
+  :root {
+    --light: #017add;
+    --lighter: #e26a4c;
+    --lightest: #ffffff;
+    --dark: #00307e;
+    --darker: #00215e;
+    --texture: ;
+  }
+  .colour-block {
+    background:var(--darker);
+    padding:7% 10% 10% 10%;
+    color:transparent;
+  }
+  .white-block {
+    background:#fff;
+    width:60%;
+    padding:7% 20% 10% 20%;
+    color:var(--darker);
+  }
+  /*------------------*/
+  /*  SKEW CLOCKWISE  */
+  /*------------------*/
+  .skew-cc{
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to right bottom, var(--darker) 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+  }
+  /*-------------------------*/
+  /* SKEW COUNTER CLOCKWISE  */
+  /*-------------------------*/
+  .skew-c{
+    width:100%;
+    height:100px;
+    position:absolute;
+    left:0px;
+    background: linear-gradient(to left bottom, #fff 49%, var(--darker) 50%);
+  }
 }

@@ -31,117 +31,30 @@
   <!-- Start of the body content -->
 
   <body style="background-color: var(--lightest)">
-    <!-- Start of the Nav Bar for small screens -->
 
-    <div style="background-color: var(--dark); color: var(--lightest)">
-      <header class="lg:hidden md:contents body-font">
-        <div
-          class="container mx-auto flex flex-wrap p-10 flex-col md:flex-row items-center"
-        >
-          <nav
-            class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center text-4xl"
-          >
-            <a class="mr-10 hover:text-white">Services</a>
-            <a class="mr-10 hover:text-white">About</a>
-            <a class="mr-10 hover:text-white">Contact</a>
-          </nav>
-        </div>
-      </header>
-    </div>
+    <!-- Start of the Nav Bar -->
 
-    <!-- Start of the Nav Bar for large screens -->
-
-    <header
-      class="md:hidden lg:flex sm:h-20 md:h-20 lg:px-16 px-6 flex-wrap items-center lg:py-0 py-2"
-      style="background-color: var(--dark)"
-    >
-      <div
-        class="md:pl-10 lg:pl-0 flex-1 flex md:justify-center lg:justify-start items-center"
-      >
-        <a href="#">
-          <img
-            class="h-20 sm:max-h-12 md:max-h-12 lg:max-h-7"
-            src="./Photos/PC_Logo_ZOOMED.png"
-          />
+    <header style="background-color: var(--dark);" class="text-gray-400 body-font">
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+          <img class="h-6" src="./Photos/PC_Logo_ZOOMED.png">
+          <span class="ml-3 text-xl">Paragon Creative, LLC.</span>
         </a>
-        <a class="pl-3 text-left text-white" href="#">
-          <h1
-            class="md:hidden lg:contents lg:text-white text-xl font-semibold"
-            style="
-              font-family: 'JetBrains Mono', monospace;
-              color: var(--lightest);
-            "
-          >
-            Paragon Creative, LLC.
-          </h1>
-        </a>
-      </div>
+        <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
 
-      <label for="menu-toggle" class="pointer-cursor lg:hidden block"
-        ><svg
-          class="fill-current text-gray-900"
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-        >
-          <title>menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg
-      ></label>
-      <input class="hidden" type="checkbox" id="menu-toggle" />
+            <!-- Menu items for small screens -->
 
-      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
-        <nav>
-          <ul
-            class="lg:flex items-center justify-between text-base text-white pt-4 lg:pt-0"
-          >
-            <div
-              class="hidden lg:flex lg:items-center lg:w-auto w-full"
-              id="menu"
-            >
-              <nav>
-                <ul
-                  class="lg:flex items-center justify-between text-base text-white pt-4 lg:pt-0"
-                >
-                  <span class="relative z-0 inline-flex shadow-sm rounded-md">
-                    <button
-                      href="mailto:Support@ParagonCreative.LLC"
-                      type="button"
-                      class="bg-opacity-50 relative inline-flex items-center px-4 py-2 rounded-l-md border text-sm font-medium focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                      style="
-                        border-color: var(--lighter);
-                        color: var(--lightest);
-                      "
-                    >
-                      Services
-                    </button>
-                    <button
-                      href="mailto:Support@ParagonCreative.LLC"
-                      type="button"
-                      class="bg-opacity-50 -ml-px relative inline-flex items-center px-4 py-2 border text-sm font-medium text-white focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                      style="
-                        border-color: var(--lighter);
-                        color: var(--lightest);
-                      "
-                    >
-                      About
-                    </button>
-                    <button
-                      href="mailto:Support@ParagonCreative.LLC"
-                      type="button"
-                      class="bg-opacity-50 -ml-px relative inline-flex items-center px-4 py-2 rounded-r-md border text-sm font-medium text-white focus:z-10 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
-                      style="
-                        border-color: var(--lighter);
-                        color: var(--lightest);
-                      "
-                    >
-                      Contact
-                    </button>
-                  </span>
-                </ul>
-              </nav>
-            </div>
-          </ul>
+          <a class="sm:contents lg:hidden mr-5 hover:text-white">Call</a>
+          <a class="sm:contents lg:hidden mr-5 hover:text-white">Email</a>
+          <a class="sm:contents lg:hidden mr-5 hover:text-white">Message</a>
+
+            <!-- Menu items for large screens -->
+
+          <a class="hidden lg:contents mr-10 hover:text-white">Call</a>
+          <a class="hidden lg:contents mr-10 pr-10 hover:text-white">Email</a>
+          <a class="hidden lg:contents mr-10 pr-10 hover:text-white">Message</a>
+          <a class="hidden lg:contents mr-10 pr-10 hover:text-white">Quote</a>
+
         </nav>
       </div>
     </header>
@@ -149,18 +62,14 @@
     <!-- Start of the CTA -->
 
     <div
-      class="md:h-3/4 lg:h-screen xsm:text-5xl sm:text-5xl md:text-5xl lg:text-5xl lg:rounded-b-3xl relative bg-cover bg-no-repeat bg-bottom"
+      class="sm:h-1/2 lg:h-screen xsm:text-5xl sm:text-5xl md:text-5xl lg:text-5xl lg:rounded-b-3xl relative bg-cover bg-no-repeat bg-bottom"
       style="background-image: url('./Photos/Programming.gif')"
       title="Coding"
     >
       <div
-        class="xsm:text-5xl sm:text-5xl md:text-5xl lg:text-5xl lg:rounded-b-3xl h-screen flex flex-col justify-center items-center inset-0 opacity-80 text-center text-white p-10"
+        class="sm:h-1/2 lg:h-screen xsm:text-5xl sm:text-5xl md:text-5xl lg:text-5xl lg:rounded-b-3xl flex flex-col justify-center items-center inset-0 opacity-80 text-center text-white p-10"
         style="background-color: var(--lighter)"
       >
-        <img
-          class="lg:hidden md:w-1/2 pb-20"
-          src="./Photos/PC_Logo_ZOOMED.png"
-        />
         <h1
           style="font-family: 'JetBrains Mono', monospace"
           class="xsm:text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
@@ -177,25 +86,6 @@
         >
           at Your Service.
         </h2>
-        <button
-          class="sm:hidden lg:inline-flex text-lg bg-transparent hover:bg-white font-bold hover:text-black py-4 px-4 my-4 border border-white rounded items-center"
-        >
-          <span href="Services.html">Get a Free Quote</span>
-          <svg
-            class="ml-2 w-4 h-4 fill-current"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M14 5l7 7m0 0l-7 7m7-7H3"
-            ></path>
-          </svg>
-        </button>
       </div>
     </div>
 
@@ -203,17 +93,17 @@
 
     <!-- What do we do? -->
 
-    <div class="text-center pt-24 space-y-5 pr-10">
-      <h2 class="text-7xl pb-5" style="color: var(--dark);font-size: 500%; font-family: 'Bebas Neue', monospace">What do we do?</h2>
+    <div class="text-center pt-24 space-y-5">
+      <h2 class="text-5xl lg:text-7xl pb-10" style="color: var(--dark); font-family: 'Bebas Neue', monospace">What do we do?</h2>
       <p class="hidden lg:contents text-xl text-gray-500">Great question! In short, we make everything that your customer sees,<br> look better! Giving off the best first impression possible.</p>
     </div>
 
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="container px-5 mx-auto">
         <div class="flex flex-wrap -m-4">
           <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
             <h2
-              class="font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left"
+              class="pt-5 lg:pt-24 font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left"
             >
               Website Design
             </h2>
@@ -308,7 +198,7 @@
           </div>
           <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
             <h2
-              class="font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left"
+              class="pt-5 lg:pt-24 font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left"
             >
               Graphics Design
             </h2>
@@ -404,7 +294,7 @@
           </div>
           <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
             <h2
-              class="font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left"
+              class="pt-5 lg:pt-24 font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left"
             >
               Photography
             </h2>
@@ -500,7 +390,7 @@
           </div>
           <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
             <h2
-              class="font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left"
+              class="pt-5 lg:pt-24 font-medium title-font tracking-widest text-gray-900 mb-4 text-sm text-center sm:text-left"
             >
               Search Engine Optimization
             </h2>
@@ -600,14 +490,14 @@
 
     <!-- How do we do it? -->
 
-    <div class="text-center pt-24 space-y-5 pr-10">
-      <h2 class="text-7xl pb-5" style="color: var(--dark);font-size: 500%; font-family: 'Bebas Neue', monospace">How do we do it?</h2>
+    <div class="text-center pt-24 space-y-5">
+      <h2 class="text-5xl lg:text-7xl" style="color: var(--dark); font-family: 'Bebas Neue', monospace">How do we do it?</h2>
       <p class="hidden lg:contents text-xl text-gray-500">This is a hard question to answer given every customer has unique needs that we spend our first meeting uncovering,<br>but here are the general steps we follow to make sure you are getting new customers every day!</p>
     </div>
 
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
-        <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
           <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
           </div>
@@ -835,13 +725,15 @@
 
     <!-- Why do we do it? -->
 
-    <div class="text-center pt-24 space-y-5 pr-10">
-      <h2 class="text-7xl pb-5" style="color: var(--dark);font-size: 500%; font-family: 'Bebas Neue', monospace">Why do we do it?</h2>
-      <p class="hidden lg:contents text-xl text-gray-500">Simply put, we want to spread the joy! We all came from different backgrounds and experienced getting lost in the crowd of competition.<br>We had enough and decided that we would rise above! Now that we understand how to get seen, we want to help you get there too!</p>
+    <div class="skew-c"></div>
+    <div class="colour-block">
+    <div class="text-center pt-24 lg:pt-10 space-y-5">
+      <h2 class="text-3xl lg:text-5xl lg:text-7xl" style="color: var(--lightest); font-family: 'Bebas Neue', monospace">Why do we do it?</h2>
+      <p style="color: var(--lightest);" class="text-md lg:text-xl text-gray-500 text-justify">Simply put, we want to spread the joy! We all came from different backgrounds and experienced getting lost in the crowd of competition. We had enough and decided that we would rise above! Now that we understand how to get seen, we want to help you get there too!</p>
     </div>
 
-<div class="bg-white">
-  <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+<div class="hidden lg:contents">
+  <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 ">
     <div class="space-y-12">
       <div class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none">
       </div>
@@ -854,8 +746,8 @@
 
             <div class="space-y-2">
               <div class="text-lg leading-6 font-medium space-y-1">
-                <h3>Nathan Jones</h3>
-                <p class="text-indigo-600">Developer | Sales</p>
+                <h3 style="color: var(--lightest)" class="text-2xl">Nathan Jones</h3>
+                <p style="color: var(--lighter)" class="">Developer | Sales</p>
               </div>
               <ul class="flex space-x-5">
                 <li>
@@ -886,8 +778,8 @@
 
             <div class="space-y-2">
               <div class="text-lg leading-6 font-medium space-y-1">
-                <h3>Haley Jones</h3>
-                <p class="text-indigo-600">Photographer | Designer</p>
+                <h3 style="color: var(--lightest)" class="text-2xl">Haley Jones</h3>
+                <p style="color: var(--lighter)" class="">Photographer | Designer</p>
               </div>
               <ul class="flex space-x-5">
                 <li>
@@ -918,8 +810,8 @@
 
             <div class="space-y-2">
               <div class="text-lg leading-6 font-medium space-y-1">
-                <h3>Marvin Wallace</h3>
-                <p class="text-indigo-600">Developer | Marketing</p>
+                <h3 style="color: var(--lightest)" class="text-2xl">Marvin Wallace</h3>
+                <p style="color: var(--lighter)" class="">Developer | Marketing</p>
               </div>
               <ul class="flex space-x-5">
                 <li>
@@ -946,12 +838,14 @@
   </div>
 </div>
 
+    </div>
 
+    <div class="skew-cc"></div>
     <!-- Let's get started! -->
 
-    <div class="text-center pt-24 space-y-5 pr-10">
-      <h2 class="text-7xl pb-5" style="color: var(--dark);font-size: 500%; font-family: 'Bebas Neue', monospace">Let's get started!</h2>
-      <p class="hidden lg:contents text-xl text-gray-500">Great question! In short, we make everything that your customer sees,<br> look better! Giving off the best first impression possible.</p>
+    <div class="text-center pt-48 lg:pt-24 lg:pt-48 space-y-5">
+      <h2 class="text-5xl lg:text-7xl" style="color: var(--dark); font-family: 'Bebas Neue', monospace">Let's get started!</h2>
+      <p class="hidden lg:contents text-xl text-gray-500">Now that you know a little about us, let's get to work!<br>Fill out the form below or shoot us an email to get started.</p>
     </div>
 
     <form name="contactus" method="POST" data-netlify="true">
@@ -991,7 +885,7 @@
 
 
 <div style="background-color: var(--lightest);">
-  <div class="max-w-7xl mx-auto py-12 px-4 divide-y-2 divide-gray-200 sm:px-6 lg:py-16 lg:px-8">
+  <div class="max-w-7xl mx-auto pt-24 py-16 px-4 divide-y-2 divide-gray-200 sm:px-6 lg:px-8">
     <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
       Frequently Asked Questions
     </h2>
