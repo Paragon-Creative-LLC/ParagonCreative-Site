@@ -9,7 +9,7 @@
   }
   .colour-block {
     background:var(--darker);
-    padding:7% 10% 10% 10%;
+    padding:7% 10% 0% 10%;
     color:transparent;
   }
   .white-block {
