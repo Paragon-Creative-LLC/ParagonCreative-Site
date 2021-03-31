@@ -58,7 +58,7 @@
                 </a>
                 <div class="-mr-2 flex items-center md:hidden">
                   <button style="background-color: var(--Red);" @click="isOpen = !isOpen" type="button"
-                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-white hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-white hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500"
                     aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <!-- Heroicon name: outline/menu -->
@@ -72,12 +72,10 @@
               </div>
             </div>
             <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+
               <a href="./Index.html" class="font-medium text-white hover:text-gray-400">Home</a>
-
-              <a href="#" class="font-medium text-white hover:text-gray-400">About</a>
-
-              <a href="#" class="font-medium text-white hover:text-gray-400">Services</a>
-              <a href="#" class="font-medium text-white hover:text-gray-400">Portfolio</a>
+              <a href="./Services.html" class="font-medium text-white hover:text-gray-400">Services</a>
+              <a href="./Portfolio.html" class="font-medium text-white hover:text-gray-400">Portfolio</a>
 
             </div>
           </nav>
@@ -101,7 +99,7 @@
               </div>
               <div class="-mr-2">
                 <button @click="isOpen = !isOpen" type="button"
-                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500">
                   <span class="sr-only">Close main menu</span>
                   <!-- Heroicon name: outline/x -->
                   <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -111,17 +109,14 @@
                 </button>
               </div>
             </div>
-            <div x-show="isOpen" class="px-2 pt-2 pb-3 space-y-1">
+            <div  class="px-2 pt-2 pb-3 space-y-1">
               <a href="./Index.html"
                 class="text-center block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-900 hover:bg-gray-50">Home</a>
 
-              <a href="#"
-                class="text-center block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-900 hover:bg-gray-50">About</a>
-
-              <a href="#"
+              <a href="./Services.html"
                 class="text-center block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-900 hover:bg-gray-50">Services</a>
 
-              <a href="#"
+              <a href="./Portfolio.html"
                 class="text-center block px-3 py-2 rounded-md text-base font-medium text-white hover:text-gray-900 hover:bg-gray-50">Portfolio</a>
             </div>
           </div>
@@ -615,28 +610,28 @@
             <label for="first_name" class="block text-sm font-medium text-gray-700">First name</label>
             <div class="mt-1">
               <input type="text" name="first_name" id="first_name" autocomplete="given-name"
-                class="bg-gray-100 py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-indigo-500 rounded-md">
+                class="bg-gray-100 py-3 px-4 block w-full shadow-sm focus:ring-red-500 focus:border-indigo-500 border-indigo-500 rounded-md">
             </div>
           </div>
           <div>
             <label for="last_name" class="block text-sm font-medium text-gray-700">Last name</label>
             <div class="mt-1">
               <input type="text" name="last_name" id="last_name" autocomplete="family-name"
-                class="bg-gray-100 py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-600 rounded-md">
+                class="bg-gray-100 py-3 px-4 block w-full shadow-sm focus:ring-red-500 focus:border-indigo-500 border-gray-600 rounded-md">
             </div>
           </div>
           <div class="sm:col-span-2">
             <label for="company" class="block text-sm font-medium text-gray-700">Company</label>
             <div class="mt-1">
               <input type="text" name="company" id="company" autocomplete="organization"
-                class="bg-gray-100 py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                class="bg-gray-100 py-3 px-4 block w-full shadow-sm focus:ring-red-500 focus:border-indigo-500 border-gray-300 rounded-md">
             </div>
           </div>
           <div class="sm:col-span-2">
             <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
             <div class="mt-1">
               <input id="email" name="email" type="email" autocomplete="email"
-                class="bg-gray-100 py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                class="bg-gray-100 py-3 px-4 block w-full shadow-sm focus:ring-red-500 focus:border-indigo-500 border-gray-300 rounded-md">
             </div>
           </div>
           <div class="sm:col-span-2">
@@ -646,7 +641,7 @@
                 <label for="country" class="sr-only">Country</label>
               </div>
               <input type="text" name="phone_number" id="phone_number" autocomplete="tel"
-                class="bg-gray-100 py-3 px-4 block w-full focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                class="bg-gray-100 py-3 px-4 block w-full focus:ring-red-500 focus:border-indigo-500 border-gray-300 rounded-md"
                 placeholder="    +1 (555) 987-6543">
             </div>
           </div>
@@ -654,12 +649,12 @@
             <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
             <div class="mt-1">
               <textarea id="message" name="message" rows="4"
-                class="bg-gray-100 py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"></textarea>
+                class="bg-gray-100 py-3 px-4 block w-full shadow-sm focus:ring-red-500 focus:border-indigo-500 border-gray-300 rounded-md"></textarea>
             </div>
           </div>
           <div class="sm:col-span-2">
             <button style="background-color: var(--Red);" type="submit"
-              class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
               Let's talk
             </button>
           </div>

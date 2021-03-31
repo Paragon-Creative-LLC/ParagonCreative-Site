@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Description" content="The official website for Paragon Creative, LLC." />
+  <title>Paragon Creative</title>
+  <link rel="icon" href="./Photos/Logos/Logo_LowRes.png" />
+
+  <!-- This is the link to tailwinds css! -->
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+
+  <!-- This is the link to our colors css! -->
+
+  <link href="./colors.css" rel="stylesheet" />
+
+  <!-- This is the link to the google fonts that we use! -->
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    h1,
+    h2 {
+      font-family: "Khand", sans-serif;
+    }
+  </style>
+
+  <!-- script to open and close the top menu -->
+
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+  <!-- body content -->
+
+<body style="background-color: var(--White)">
+
+  <!-- This example requires Tailwind CSS v2.0+ -->
+  <nav x-data="{isOpen: false}"  style="background-color: var(--DarkBlue);" class="shadow">
+    <div  class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20">
+        <div class="flex">
+          <div class="flex-shrink-0 flex items-center">
+            <img class="block lg:hidden h-10 w-auto" src="./Photos/Logos/Logo_With_Text.svg" alt="Paragon Creative">
+            <img class="hidden lg:block h-10 w-auto" src="./Photos/Logos/Logo_With_Text.svg" alt="Paragon Creative">
+          </div>
+          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+            <a href="./Index.html"
+              class="border-transparent text-gray-100 hover:border-red-200 hover:text-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              Home
+            </a>
+            <a href="./Services.html"
+              class="border-red-500 text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              Services
+            </a>
+            <a href="./Portfolio.html"
+              class="border-transparent text-gray-100 hover:border-red-200 hover:text-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              Portfolio
+            </a>
+          </div>
+        </div>
+        <div class="-mr-2 flex items-center sm:hidden">
+          <!-- Mobile menu button -->
+          <button @click="isOpen = !isOpen" type="button"
+            class="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-500"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div x-show="isOpen" class="sm:hidden" id="mobile-menu">
+      <div   class="pt-2 pb-3 space-y-1">
+        <!-- Current: "bg-red-500 border-red-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
+        <a href="./Index.html"
+          class="border-transparent text-white hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Home</a>
+        <a href="./Services.html"
+          class="border-transparent text-white hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Services</a>
+        <a href="./Portfolio.html"
+          class="border-transparent text-white hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Start of Content -->
+
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="bg-white">
+  <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+    <div>
+      <h3 class="text-base font-semibold text-red-600 uppercase tracking-wide">Everything you need</h3>
+      <h2 class="mt-2 text-3xl font-extrabold text-gray-900">One Stop Shop for Marketing.</h2>
+      <p class="mt-4 text-lg text-gray-500">No need to hire a designer, developer, and marketing team anymore! With Paragon you have us on call whenever you need us!</p>
+    </div>
+    <div class="mt-12 lg:mt-0 lg:col-span-2">
+      <dl class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Web Development</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">
+            We work with a team of designers and marketers to not only develop a unique site for your business, but one that will get you more sales and views on Google.
+          </dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Logo Design</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">
+            With years of experience and a team of designers, logos are one of our favorite things to design! This is the face of your brand, let us build you the perfect logo.
+          </dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Social Media Consulting</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">
+            Every business is involved with social media in one way or another and we are here to make sure your posts are seen by as many people as possible.
+          </dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Business Consulting</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">
+            Ever wondered what your next move should be? Maybe you arent getting the sales you are aiming for. The leaders of Paragon will personally coach you through the process.
+          </dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Ad Creation</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">
+            Advertisements keep our business and yours alive. Let us design you new advertisements aimed at the customers you are trying to get based on market research.
+          </dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Social Media Post Creation</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">
+            We study your brand and design posts that will pull your target audience! This will get you more sales and expand your customer base exponentially.
+          </dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Video Editing</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">
+            All you need to do is record the video, tell us what you want the video to do, and send us the files! We will build your new video for whatever the purpose may be.
+          </dd>
+        </div>
+
+        <div class="relative">
+          <dt>
+            <!-- Heroicon name: outline/check -->
+            <svg class="absolute h-6 w-6 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <p class="ml-9 text-lg leading-6 font-medium text-gray-900">Content / Copy Writing</p>
+          </dt>
+          <dd class="mt-2 ml-9 text-base text-gray-500">
+            If you need fresh content for your website you have come to the right place. Tell us the tone you want to set, the topic, and how long you want it and we will get it done!
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+
+</html>
