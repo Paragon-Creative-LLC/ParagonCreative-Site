@@ -36,8 +36,8 @@
 <body style="background-color: var(--White)">
 
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <nav x-data="{isOpen: false}"  style="background-color: var(--DarkBlue);" class="shadow">
-    <div  class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <nav x-data="{isOpen: false}" style="background-color: var(--DarkBlue);" class="shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-20">
         <div class="flex">
           <div class="flex-shrink-0 flex items-center">
@@ -51,7 +51,7 @@
               Home
             </a>
             <a href="./Services.html"
-            class="border-transparent text-gray-100 hover:border-red-200 hover:text-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              class="border-transparent text-gray-100 hover:border-red-200 hover:text-gray-300 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
               Services
             </a>
             <a href="./Portfolio.html"
@@ -81,7 +81,7 @@
 
     <!-- Mobile menu, show/hide based on menu state. -->
     <div x-show="isOpen" class="sm:hidden" id="mobile-menu">
-      <div   class="pt-2 pb-3 space-y-1">
+      <div class="pt-2 pb-3 space-y-1">
         <!-- Current: "bg-red-500 border-red-500 text-red-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
         <a href="./Index.html"
           class="border-transparent text-white hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Home</a>
@@ -94,107 +94,242 @@
   </nav>
 
 
-<!-- Start of Content -->
+  <!-- Start of Content -->
 
 
-<div class="portfolio-2 py-6 md:py-20">
-  <div class="container px-4 mx-auto">
+  <div class="portfolio-2 py-6 md:py-20">
+    <div class="container px-4 mx-auto">
 
-    <div class="md:flex md:justify-center">
-      <div class="md:w-10/12 xl:w-8/12 text-center">
-        <h1 class="font-semibold text-3xl md:text-4xl mb-4">Websites by Paragon Creative</h1>
-        <p class="text-lg">We work with a wide variety of industries from all over the United States. Let us know what we can do for you!</p>
-        <div class="mt-6">
-          <button class="bg-red-600 border-2 border-solid border-red-600 hover:bg-red-700 hover:border-red-700 text-white rounded-md py-3 px-8 transition-colors duration-300 mx-2 mt-4">Contact Us</button>
-          <button class="border-2 border-solid border-red-600 text-red-600 hover:bg-red-600 hover:text-white rounded-md py-3 px-8 transition-colors duration-300 mx-2 mt-4">Get Quote</button>
+      <div class="md:flex md:justify-center">
+        <div class="md:w-10/12 xl:w-8/12 text-center">
+          <h1 class="font-semibold text-3xl md:text-4xl mb-4">Websites by Paragon Creative</h1>
+          <p class="text-lg">We work with a wide variety of industries from all over the United States. Let us know what
+            we can do for you!</p>
+          <div class="mt-6">
+            <button
+              class="bg-red-600 border-2 border-solid border-red-600 hover:bg-red-700 hover:border-red-700 text-white rounded-md py-3 px-8 transition-colors duration-300 mx-2 mt-4">Contact
+              Us</button>
+            <button
+              class="border-2 border-solid border-red-600 text-red-600 hover:bg-red-600 hover:text-white rounded-md py-3 px-8 transition-colors duration-300 mx-2 mt-4">Get
+              Quote</button>
+          </div>
         </div>
       </div>
+
+
+
+      <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 md:mt-12 pb-6">
+
+
+        <a href="https://haleyjones.photography/">
+          <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+            <div class="portfolio-item mx-auto max-w-sm">
+              <div class="portfolio-img relative overflow-hidden cursor-pointer">
+                <img src="./Photos/Portfolio/HJ.PNG" alt="portfolio image" class="max-w-full h-auto">
+                <div class="portfolio-hover"></div>
+              </div>
+              <div class="px-1 py-4">
+
+                <h5 class="font-semibold text-xl text-red-600 uppercase">Haley Jones Photography</h5>
+
+                <p class="text-gray-600">Photography Business out of Florida.</p>
+              </div>
+            </div>
+        </a>
+      </div>
+
+
+
+      <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+        <a href="https://paragoncreative.llc/">
+          <div class="portfolio-item mx-auto max-w-sm">
+            <div class="portfolio-img relative overflow-hidden cursor-pointer">
+              <img src="./Photos/Portfolio/Paragon.PNG" alt="portfolio image" class="max-w-full h-auto">
+              <div class="portfolio-hover"></div>
+            </div>
+            <div class="px-1 py-4">
+              <h5 class="font-semibold text-xl text-red-600 uppercase">Paragon Creative</h5>
+              <p class="text-gray-600">The website you are currently using.</p>
+            </div>
+          </div>
+      </div>
+      </a>
+
+
+      <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+        <a href="https://www.zomes.com/">
+          <div class="portfolio-item mx-auto max-w-sm">
+            <div class="portfolio-img relative overflow-hidden cursor-pointer">
+              <img src="./Photos/Portfolio/Zomes.PNG" alt="portfolio image" class="max-w-full h-auto">
+              <div class="portfolio-hover"></div>
+            </div>
+            <div class="px-1 py-4">
+              <h5 class="font-semibold text-xl text-red-600 uppercase">Zomes Domes</h5>
+              <p class="text-gray-600">Bioceramic Domes Builder, out of California.</p>
+            </div>
+          </div>
+      </div>
+      </a>
+
+
+
+      <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+        <a href="https://thejeepr.com/">
+          <div class="portfolio-item mx-auto max-w-sm">
+            <div class="portfolio-img relative overflow-hidden cursor-pointer">
+              <img src="./Photos/Portfolio/Jeepr.PNG" alt="portfolio image" class="max-w-full h-auto">
+              <div class="portfolio-hover"></div>
+            </div>
+            <div class="px-1 py-4">
+              <h5 class="font-semibold text-xl text-red-600 uppercase">Jeepr' Parts</h5>
+              <p class="text-gray-600">Offroad Parts Manufacturer out of Kentucky.</p>
+            </div>
+          </div>
+      </div>
+      </a>
+
+
+      <div class="hidden sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+        <a href="https://haleyjones.photography/">
+          <div class="portfolio-item mx-auto max-w-sm">
+            <div class="portfolio-img relative overflow-hidden cursor-pointer">
+              <img src="./Photos/Stock/Header.jpg" alt="portfolio image" class="max-w-full h-auto">
+              <div class="portfolio-hover"></div>
+            </div>
+            <div class="px-1 py-4">
+              <h5 class="font-semibold text-xl text-red-600 uppercase">Pomodoro App</h5>
+              <p class="text-gray-600">FWR blocks is the must have tool for designers and developers.</p>
+            </div>
+          </div>
+      </div>
+      </a>
+
+
+
+        <div class="hidden sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+          <a href="https://haleyjones.photography/">
+          <div class="portfolio-item mx-auto max-w-sm">
+            <div class="portfolio-img relative overflow-hidden cursor-pointer">
+              <img src="./Photos/Stock/Header.jpg" alt="portfolio image" class="max-w-full h-auto">
+              <div class="portfolio-hover"></div>
+            </div>
+            <div class="px-1 py-4">
+              <h5 class="font-semibold text-xl text-red-600 uppercase">Glax landing</h5>
+              <p class="text-gray-600">FWR blocks are made with Bootstrap and minimal custom styling.</p>
+            </div>
+          </div>
+        </div>
+      </a>
+
     </div>
-
-    <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 md:mt-12 pb-6">
-
-      <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
-        <div class="portfolio-item mx-auto max-w-sm">
-          <div class="portfolio-img relative overflow-hidden cursor-pointer">
-            <img src="./Photos/Portfolio/HJ.PNG" alt="portfolio image" class="max-w-full h-auto">
-            <div class="portfolio-hover"></div>
-          </div>
-          <div class="px-1 py-4">
-            <h5 class="font-semibold text-xl text-red-600 uppercase">Haley Jones Photography</h5>
-            <p class="text-gray-600">Photography Business out of Florida.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
-        <div class="portfolio-item mx-auto max-w-sm">
-          <div class="portfolio-img relative overflow-hidden cursor-pointer">
-            <img src="./Photos/Portfolio/Paragon.PNG" alt="portfolio image" class="max-w-full h-auto">
-            <div class="portfolio-hover"></div>
-          </div>
-          <div class="px-1 py-4">
-            <h5 class="font-semibold text-xl text-red-600 uppercase">Paragon Creative</h5>
-            <p class="text-gray-600">The website you are currently using.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
-        <div class="portfolio-item mx-auto max-w-sm">
-          <div class="portfolio-img relative overflow-hidden cursor-pointer">
-            <img src="./Photos/Portfolio/Zomes.PNG" alt="portfolio image" class="max-w-full h-auto">
-            <div class="portfolio-hover"></div>
-          </div>
-          <div class="px-1 py-4">
-            <h5 class="font-semibold text-xl text-red-600 uppercase">Zomes Domes</h5>
-            <p class="text-gray-600">Bioceramic Domes Builder, out of California.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
-        <div class="portfolio-item mx-auto max-w-sm">
-          <div class="portfolio-img relative overflow-hidden cursor-pointer">
-            <img src="./Photos/Portfolio/Jeepr.PNG" alt="portfolio image" class="max-w-full h-auto">
-            <div class="portfolio-hover"></div>
-          </div>
-          <div class="px-1 py-4">
-            <h5 class="font-semibold text-xl text-red-600 uppercase">Jeepr' Parts</h5>
-            <p class="text-gray-600">Offroad Parts Manufacturer out of Kentucky.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
-        <div class="portfolio-item mx-auto max-w-sm">
-          <div class="portfolio-img relative overflow-hidden cursor-pointer">
-            <img src="./Photos/Stock/Header.jpg" alt="portfolio image" class="max-w-full h-auto">
-            <div class="portfolio-hover"></div>
-          </div>
-          <div class="px-1 py-4">
-            <h5 class="font-semibold text-xl text-red-600 uppercase">Pomodoro App</h5>
-            <p class="text-gray-600">FWR blocks is the must have tool for designers and developers.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
-        <div class="portfolio-item mx-auto max-w-sm">
-          <div class="portfolio-img relative overflow-hidden cursor-pointer">
-            <img src="./Photos/Stock/Header.jpg" alt="portfolio image" class="max-w-full h-auto">
-            <div class="portfolio-hover"></div>
-          </div>
-          <div class="px-1 py-4">
-            <h5 class="font-semibold text-xl text-red-600 uppercase">Glax landing</h5>
-            <p class="text-gray-600">FWR blocks are made with Bootstrap and minimal custom styling.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
   </div>
-</div>
+  </div>
+
+
+  <div class="portfolio-2 py-6 md:py-14">
+    <div class="container px-4 mx-auto">
+
+      <div class="md:flex md:justify-center">
+        <div class="md:w-10/12 xl:w-8/12 text-center">
+          <h1 class="font-semibold text-3xl md:text-4xl mb-4">Logos by Paragon Creative</h1>
+          <p class="text-lg">Your logo is the face of your brand. Let us build your fully unique logo!</p>
+          <div class="mt-6">
+            <button
+              class="bg-red-600 border-2 border-solid border-red-600 hover:bg-red-700 hover:border-red-700 text-white rounded-md py-3 px-8 transition-colors duration-300 mx-2 mt-4">Contact
+              Us</button>
+            <button
+              class="border-2 border-solid border-red-600 text-red-600 hover:bg-red-600 hover:text-white rounded-md py-3 px-8 transition-colors duration-300 mx-2 mt-4">Get
+              Quote</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 md:mt-12 pb-6">
+
+        <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+          <div class="portfolio-item mx-auto max-w-sm">
+            <div class="portfolio-img relative overflow-hidden cursor-pointer">
+              <img src="./Photos/Portfolio/HJ_Logo.PNG" alt="portfolio image" class="max-w-full h-auto">
+              <div class="portfolio-hover"></div>
+            </div>
+            <div class="px-1 py-4">
+              <h5 class="font-semibold text-xl text-red-600 uppercase">Haley Jones Photography</h5>
+              <p class="text-gray-600">Photography Business out of Florida.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+          <div class="portfolio-item mx-auto max-w-sm">
+            <div class="portfolio-img relative overflow-hidden cursor-pointer">
+              <img src="./Photos/Portfolio/Paragon_Logo.PNG" alt="portfolio image" class="max-w-full h-auto">
+              <div class="portfolio-hover"></div>
+            </div>
+            <div class="px-1 py-4">
+              <h5 class="font-semibold text-xl text-red-600 uppercase">Paragon Creative</h5>
+              <p class="text-gray-600">The website you are currently using.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+          <div class="portfolio-item mx-auto max-w-sm">
+            <div class="portfolio-img relative overflow-hidden cursor-pointer">
+              <img src="./Photos/Portfolio/Zomes_Logo.PNG" alt="portfolio image" class="max-w-full h-auto">
+              <div class="portfolio-hover"></div>
+            </div>
+            <div class="px-1 py-4">
+              <h5 class="font-semibold text-xl text-red-600 uppercase">Zomes Domes</h5>
+              <p class="text-gray-600">Bioceramic Domes Builder, out of California.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+          <div class="portfolio-item mx-auto max-w-sm">
+            <div class="portfolio-img relative overflow-hidden cursor-pointer">
+              <img src="./Photos/Portfolio/Jeepr.PNG" alt="portfolio image" class="max-w-full h-auto">
+              <div class="portfolio-hover"></div>
+            </div>
+            <div class="px-1 py-4">
+              <h5 class="font-semibold text-xl text-red-600 uppercase">Jeepr' Parts</h5>
+              <p class="text-gray-600">Offroad Parts Manufacturer out of Kentucky.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+          <div class="portfolio-item mx-auto max-w-sm">
+            <div class="portfolio-img relative overflow-hidden cursor-pointer">
+              <img src="./Photos/Stock/Header.jpg" alt="portfolio image" class="max-w-full h-auto">
+              <div class="portfolio-hover"></div>
+            </div>
+            <div class="px-1 py-4">
+              <h5 class="font-semibold text-xl text-red-600 uppercase">Pomodoro App</h5>
+              <p class="text-gray-600">FWR blocks is the must have tool for designers and developers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden sm:px-6 sm:w-1/2 lg:w-1/3 mt-8">
+          <div class="portfolio-item mx-auto max-w-sm">
+            <div class="portfolio-img relative overflow-hidden cursor-pointer">
+              <img src="./Photos/Stock/Header.jpg" alt="portfolio image" class="max-w-full h-auto">
+              <div class="portfolio-hover"></div>
+            </div>
+            <div class="px-1 py-4">
+              <h5 class="font-semibold text-xl text-red-600 uppercase">Glax landing</h5>
+              <p class="text-gray-600">FWR blocks are made with Bootstrap and minimal custom styling.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
 
 </body>
 
